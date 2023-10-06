@@ -1,0 +1,12 @@
+.image-divider {
+  width: 100%;
+  height: 12.5rem;
+  margin-bottom: 4rem;
+}
+
+.image-divider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 18.75rem;
+}
