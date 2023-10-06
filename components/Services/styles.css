@@ -1,6 +1,7 @@
 .service-section {
-  margin: 0 auto 4rem auto;
+  margin: 0 auto;
   background: #fff;
+  padding: 4rem 0;
 }
 
 .service-section h2 {
@@ -15,7 +16,7 @@
 
 .service__contact-section {
   width: 87.2%;
-  margin: 0 auto 4rem;
+  margin: 0 auto;
   text-align: center;
 }
 
