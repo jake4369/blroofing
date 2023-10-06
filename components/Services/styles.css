@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+.service__contact-section p {
+  margin-bottom: 2rem;
+}
+
 /* SERVICE CARDS */
 
 .services__cards-container {
