@@ -1,0 +1,14 @@
+.about-section {
+  width: 87.2%;
+  padding: 4rem 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-section h1 {
+  margin-bottom: 2rem;
+}
+
+/* .about-section p:first-of-type {
+  margin-bottom: 2rem;
+} */
