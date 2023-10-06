@@ -23,7 +23,7 @@ const Reviews = ({ reviewClassname, reviewData }) => {
   }, [slides]);
 
   return (
-    <section className={reviewClassname}>
+    <div className={`review-card ${reviewClassname}`}>
       <div className="review-section__stars-container">
         <FaStar />
         <FaStar />
@@ -45,7 +45,7 @@ const Reviews = ({ reviewClassname, reviewData }) => {
       </p>
 
       <span className="review__author">{slides[activeSlideIndex].author}</span>
-    </section>
+    </div>
   );
 };
 
