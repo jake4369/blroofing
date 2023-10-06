@@ -1,4 +1,5 @@
 import ServiceCard from "./ServiceCard";
+import CTAButton from "@components/Shared/CTAButton";
 
 const Services = ({ services }) => {
   const serviceCards = services.map((service, index) => (
@@ -18,8 +19,11 @@ const Services = ({ services }) => {
 
       <div className="service__contact-section">
         <p>
-          Contact for more information about our services and for a FREE QUOTE
+          Contact us for more information about our services and for your <br />
+          <strong>FREE QUOTE</strong>
         </p>
+
+        <CTAButton>Contact Us</CTAButton>
       </div>
     </section>
   );
