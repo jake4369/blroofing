@@ -27,8 +27,9 @@
   margin-bottom: 4rem;
 }
 
-.carousel-text {
+p.carousel-text {
   font-size: 3rem;
+  line-height: normal;
   font-weight: 700;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
