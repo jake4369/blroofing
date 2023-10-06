@@ -8,7 +8,7 @@ const Footer = () => {
       </span>
 
       <p>
-        If you have any questions and require any furture information on the
+        If you have any questions or require any further information on the
         services we provide, please do not hestitate to contact us.
       </p>
 
