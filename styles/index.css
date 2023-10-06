@@ -4,6 +4,7 @@
 @import "./../components/About/styles.css";
 @import "./../components/Reviews/styles.css";
 @import "./../components/Services/styles.css";
+@import "./../components/ImageDivider/styles.css";
 
 * {
   margin: 0;
