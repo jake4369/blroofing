@@ -4,13 +4,13 @@
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 0.5rem auto;
   color: #f7d05a;
 }
 
 .review-section__link {
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #5c8edc;
 }
 
@@ -23,6 +23,7 @@
   padding: 2rem 1rem;
   border-radius: 0.5rem;
   background: #fff;
+  border: 4px solid #5c8edc;
 }
 
 .reviews__primary__text {
