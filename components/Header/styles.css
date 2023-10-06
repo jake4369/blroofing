@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6.4%;
+  height: 4.375rem;
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  width: 100%;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.open-menu-btn {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 0;
+}
+
+.hamburger-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
