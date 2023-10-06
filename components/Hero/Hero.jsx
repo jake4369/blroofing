@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 
 const Hero = () => {
   const [slides, setSlides] = useState([
-    "LB Roofing & Brickwork",
-    "Professional Roofing Specialists",
-    "Trusted, Expert Installers",
+    "LB Roofing <br /> & <br /> Brickwork",
+    "Expert Roofing Services Near You",
+    "Trustworthy and Experienced Roof Installers",
+    "Quality Roofing Solutions for Your Home",
   ]);
 
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
@@ -17,7 +18,7 @@ const Hero = () => {
       setActiveSlideIndex((prevIndex) =>
         prevIndex === slides.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); // Change slide every 3 seconds (adjust as needed)
+    }, 5000); // Change slide every 3 seconds (adjust as needed)
 
     // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
@@ -28,10 +29,13 @@ const Hero = () => {
       <div className="filter"></div>
 
       <div className="hero-section__text-carousel">
-        <p className="carousel-text">{slides[activeSlideIndex]}</p>
+        <p
+          className="carousel-text"
+          dangerouslySetInnerHTML={{ __html: slides[activeSlideIndex] }}
+        ></p>
       </div>
 
-      <button>Get a Quote</button>
+      <button className="hero-section__btn">Get a Quote</button>
     </section>
   );
 };
