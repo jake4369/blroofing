@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section className="about-section">
-      <h1>LB Brickwork & Roofing: Your Trusted Roofing Experts</h1>
+      <h1>LB Brickwork & Roofing</h1>
 
       <p>
         With over a decade of experience in the industry, we are your go-to
@@ -11,6 +11,8 @@ const About = () => {
         referrals. Count on us for premium materials and excellence in every
         project.
       </p>
+
+      <span>Your Trusted Roofing Experts</span>
 
       {/* 
           <p>
