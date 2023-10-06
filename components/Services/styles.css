@@ -1,0 +1,49 @@
+.service-section {
+  margin: 0 auto 4rem auto;
+}
+
+.service-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services__cards-container {
+  margin-bottom: 4rem;
+}
+
+.service__contact-section {
+  width: 87.2%;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+/* SERVICE CARDS */
+
+.services__cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service-card__text-container {
+  text-align: center;
+}
+
+.service-title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.service-card__icon {
+  margin: 0 auto;
+}
+
+.service-card p {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: 0 6.4%;
+  opacity: 0.6;
+}
