@@ -6,7 +6,18 @@
 }
 
 .about-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-section p {
+  line-height: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.about-section span {
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 /* .about-section p:first-of-type {
