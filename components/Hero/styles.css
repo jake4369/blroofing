@@ -1,6 +1,6 @@
 .hero-section {
   height: 37.5rem;
-  background-image: url("./../../public/assets/hero/hero-img-tablet.png");
+  background-image: url("./../../public/assets/hero/hero-img-mobile.png");
   background-size: cover;
   background-position: center;
   position: relative;
