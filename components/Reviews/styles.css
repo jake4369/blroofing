@@ -1,0 +1,30 @@
+/* GLOBALS */
+.review-section__stars-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 2rem auto;
+  color: #f7d05a;
+}
+
+.review-section__link {
+  margin-bottom: 1rem;
+}
+
+/* PRIMARY REVIEWS */
+.reviews__primary {
+  text-align: center;
+  width: 87.2%;
+  margin: 0 auto 4rem auto;
+}
+
+.reviews__primary__text {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.review__author {
+  font-size: 700;
+}
