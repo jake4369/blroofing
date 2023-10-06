@@ -1,0 +1,19 @@
+.testimonial-section {
+  padding: 4rem 0;
+  width: 87.2%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial-section p {
+  margin-bottom: 4rem;
+}
+
+.testimonial-section strong {
+  display: block;
+  margin-top: 1rem;
+}
+
+.testimonial-section .cta-btn {
+  margin-bottom: 4rem;
+}
