@@ -2,9 +2,11 @@
 
 import { useEffect, useState } from "react";
 
+import CTAButton from "@components/Shared/CTAButton";
+
 const Hero = () => {
   const slides = [
-    "<span class='highlight__orange'>LB</span> Roofing <br /> & <br /> Brickwork",
+    "<span class='highlight__orange'>LB</span> Roofing <br /> & <br /> Brickwork <br /> <span class='highlight__orange hero__small'>West Midlands</span>",
     "<span class='highlight__orange'>Expert Roofing Services</span> Near You",
     "<span class='highlight__orange'>Trustworthy & Experienced</span> Roof Installers",
     "<span class='highlight__orange'>Quality Roofing Solutions</span> <br /> For Your Home",
@@ -37,7 +39,7 @@ const Hero = () => {
         />
       </div>
 
-      <button className="hero-section__btn">Get a Quote</button>
+      <CTAButton>Get a Quote</CTAButton>
     </section>
   );
 };
