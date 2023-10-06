@@ -8,6 +8,10 @@ export const primaryReviews = [
     author: "pete69718pete",
   },
   {
+    text: "Made me feel confident with his ability to do the job. Honest and competent.",
+    author: "yelena11987",
+  },
+  {
     text: "Did what needed to be done and backed work up with photographic evidence.",
     author: "john20435_70",
   },
