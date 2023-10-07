@@ -20,7 +20,11 @@ const Home = () => {
     <main id="home">
       <Hero />
       <About />
-      <Reviews reviewClassname="reviews__primary" reviewData={primaryReviews} />
+      <Reviews
+        reviewClassname="reviews__primary"
+        reviewData={primaryReviews}
+        timer={2500}
+      />
       <ImageDivider img="/assets/misc/roofer.png" />
       <Services services={services} />
       <ImageDivider img="/assets/misc/guttering.png" />

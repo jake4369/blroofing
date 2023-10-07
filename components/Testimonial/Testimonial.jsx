@@ -28,6 +28,7 @@ const Testimonial = () => {
       <Reviews
         reviewClassname="reviews__secondary"
         reviewData={secondaryReviews}
+        timer={4000}
       />
     </section>
   );

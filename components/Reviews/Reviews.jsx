@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { FaStar } from "react-icons/fa";
 
-const Reviews = ({ reviewClassname, reviewData }) => {
+const Reviews = ({ reviewClassname, reviewData, timer }) => {
   const [slides, setSlides] = useState(reviewData);
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
@@ -16,7 +16,7 @@ const Reviews = ({ reviewClassname, reviewData }) => {
       setActiveSlideIndex((prevIndex) =>
         prevIndex === slides.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // Change slide every 3 seconds (adjust as needed)
+    }, timer); // Change slide every 3 seconds (adjust as needed)
 
     // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
