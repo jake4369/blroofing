@@ -47,21 +47,24 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={isSticky ? "sticky" : ""}>
-      <span className="logo-text">
-        <span className="highlight__orange">LB</span> Roofing
-      </span>
+    <div className="header-container">
+      <header className={isSticky ? "sticky" : ""}>
+        <span className="logo-text">
+          <span className="highlight__orange">LB</span> Roofing
+        </span>
 
-      <button className="menu-btn">
-        {menuOpen ? (
-          <FiX className="menu-icon" onClick={toggleMenu} />
-        ) : (
-          <FiMenu className="menu-icon" onClick={toggleMenu} />
-        )}
-      </button>
+        <button className="menu-btn">
+          {menuOpen ? (
+            <FiX className="menu-icon" onClick={toggleMenu} />
+          ) : (
+            <FiMenu className="menu-icon" onClick={toggleMenu} />
+          )}
+        </button>
 
-      <Nav toggleMenu={toggleMenu} animationClass={animationClass} />
-    </header>
+        <Nav toggleMenu={toggleMenu} animationClass={animationClass} />
+      </header>
+      {isSticky && <div className="header-placeholder" />}
+    </div>
   );
 };
 

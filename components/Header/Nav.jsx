@@ -22,6 +22,7 @@ const Nav = ({ animationClass, toggleMenu }) => {
           alt=""
           width={100}
           height={100}
+          priority
         />
         <span className="text-logo__mobile-nav">
           <span className="highlight__orange">LB</span> Roofing
