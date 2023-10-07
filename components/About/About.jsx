@@ -1,6 +1,14 @@
+import Image from "next/image";
+
 const About = () => {
   return (
     <section className="about-section" id="about">
+      <Image
+        src="/assets/services/house-icon.png"
+        alt=""
+        width={150}
+        height={150}
+      />
       <h1>
         <span className="highlight__orange">LB</span> Roofing
       </h1>
