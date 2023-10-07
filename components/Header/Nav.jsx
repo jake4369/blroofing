@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const Nav = ({ animationClass }) => {
+const Nav = ({ animationClass, toggleMenu }) => {
   const sections = ["home", "about", "services", "testimonials"];
 
   const links = sections.map((section) => (
-    <li key={section}>
+    <li key={section} onClick={toggleMenu}>
       <Link href={`#${section}`}>{section}</Link>
     </li>
   ));

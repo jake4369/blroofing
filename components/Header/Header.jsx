@@ -72,7 +72,7 @@ const Header = () => {
         )}
       </button>
 
-      <Nav animationClass={animationClass} />
+      <Nav toggleMenu={toggleMenu} animationClass={animationClass} />
     </header>
   );
 };
