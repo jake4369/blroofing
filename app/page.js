@@ -9,7 +9,7 @@ import { primaryReviews, services } from "@constants";
 
 const Home = () => {
   return (
-    <main>
+    <main id="home">
       <Hero />
       <About />
       <Reviews reviewClassname="reviews__primary" reviewData={primaryReviews} />
