@@ -23,7 +23,7 @@ const Hero = () => {
       setActiveSlideIndex((prevIndex) =>
         prevIndex === slides.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // Change slide every 5 seconds (adjust as needed)
+    }, 3000); // Change slide every 5 seconds (adjust as needed)
 
     // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
