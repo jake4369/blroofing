@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import CTAButton from "@components/Shared/CTAButton";
+
 const Nav = ({ animationClass, toggleMenu }) => {
   const sections = ["home", "about", "services", "testimonials"];
 
@@ -28,7 +30,17 @@ const Nav = ({ animationClass, toggleMenu }) => {
           <span className="highlight__orange">LB</span> Roofing
         </span>
 
-        <ul className="mobile-nav">{links}</ul>
+        <ul className="mobile-nav">
+          {links}
+          <li onClick={toggleMenu}>
+            <div className="nav__cta-btn-container">
+              <p>
+                Get your <strong>FREE</strong> quote
+              </p>
+              <CTAButton>Contact Us</CTAButton>
+            </div>
+          </li>
+        </ul>
       </div>
     </nav>
   );
