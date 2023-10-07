@@ -15,8 +15,8 @@
   box-sizing: border-box;
 }
 
-input,
-button * {
+button,
+* {
   outline: none !important;
   -webkit-tap-highlight-color: transparent; /* Remove tap highlight on iOS */
   -webkit-touch-callout: none; /* Disable callout on iOS */
