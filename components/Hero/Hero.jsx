@@ -1,18 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+
+import { ModalContext } from "@context/ModelContext";
 
 import CTAButton from "@components/Shared/CTAButton";
 
 const Hero = () => {
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const { openModal } = useContext(ModalContext);
+
   const slides = [
     "<span class='highlight__orange'>LB</span> Roofing <br /> <span class='highlight__orange hero__small'>West Midlands</span>",
     "<span class='highlight__orange'>Expert <br /> Roofing Services</span> Near You",
     "<span class='highlight__orange'>Trustworthy & Experienced</span> Roof Installers",
     "<span class='highlight__orange'>Quality Roofing Solutions</span> <br /> For Your Home",
   ];
-
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -39,7 +42,7 @@ const Hero = () => {
         />
       </div>
 
-      <CTAButton>Get a Quote</CTAButton>
+      <CTAButton handleClick={openModal}>Get a Quote</CTAButton>
     </section>
   );
 };

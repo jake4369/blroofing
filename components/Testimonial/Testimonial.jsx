@@ -1,9 +1,17 @@
+"use client";
+
+import { useContext } from "react";
+
+import { ModalContext } from "@context/ModelContext";
+
 import Reviews from "@components/Reviews/Reviews";
 import CTAButton from "@components/Shared/CTAButton";
 
 import { secondaryReviews } from "@constants";
 
 const Testimonial = () => {
+  const { openModal } = useContext(ModalContext);
+
   return (
     <section className="testimonial-section" id="testimonials">
       <h3>Why Us?</h3>
@@ -15,7 +23,7 @@ const Testimonial = () => {
         <strong>Trust us to beat any written quote you receive.</strong>
       </p>
 
-      <CTAButton>Get a Quote</CTAButton>
+      <CTAButton handleClick={openModal}>Get a Quote</CTAButton>
 
       <Reviews
         reviewClassname="reviews__secondary"

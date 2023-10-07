@@ -1,5 +1,9 @@
-const CTAButton = ({ children }) => {
-  return <button className="cta-btn">{children}</button>;
+const CTAButton = ({ children, handleClick }) => {
+  return (
+    <button className="cta-btn" onClick={handleClick}>
+      {children}
+    </button>
+  );
 };
 
 export default CTAButton;

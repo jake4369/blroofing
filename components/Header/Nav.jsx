@@ -1,9 +1,17 @@
+"use client";
+
+import { useContext, useEffect } from "react";
+
+import { ModalContext } from "@context/ModelContext";
+
 import Link from "next/link";
 import Image from "next/image";
 
 import CTAButton from "@components/Shared/CTAButton";
 
 const Nav = ({ animationClass, toggleMenu }) => {
+  const { openModal } = useContext(ModalContext);
+
   const sections = ["home", "about", "services", "testimonials"];
 
   const links = sections.map((section) => (
@@ -34,7 +42,7 @@ const Nav = ({ animationClass, toggleMenu }) => {
           {links}
           <li onClick={toggleMenu}>
             <div className="nav__cta-btn-container">
-              <CTAButton>Contact Us</CTAButton>
+              <CTAButton handleClick={openModal}>Contact Us</CTAButton>
               <p>
                 Get your <strong>FREE</strong> quote
               </p>

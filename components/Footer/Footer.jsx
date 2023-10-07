@@ -1,6 +1,14 @@
+"use client";
+
+import { useContext } from "react";
+
+import { ModalContext } from "@context/ModelContext";
+
 import CTAButton from "@components/Shared/CTAButton";
 
 const Footer = () => {
+  const { openModal } = useContext(ModalContext);
+
   return (
     <footer>
       <span className="footer__logo-text">
@@ -19,7 +27,7 @@ const Footer = () => {
         <strong className="highlight__orange">FREE QUOTE</strong>.
       </p>
 
-      <CTAButton>Contact Us</CTAButton>
+      <CTAButton handleClick={openModal}>Contact Us</CTAButton>
     </footer>
   );
 };

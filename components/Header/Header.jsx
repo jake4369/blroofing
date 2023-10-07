@@ -46,6 +46,29 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (menuOpen) {
+        // Disable scrolling on body and html elements when the menu is open
+        const body = document.body;
+        const html = document.documentElement;
+        body.style.overflow = "hidden";
+        html.style.overflow = "hidden";
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      // Re-enable scrolling on body and html elements when the menu is closed
+      const body = document.body;
+      const html = document.documentElement;
+      body.style.overflow = "auto";
+      html.style.overflow = "auto";
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [menuOpen]);
+
   return (
     <div className="header-container">
       <header className={isSticky ? "sticky" : ""}>

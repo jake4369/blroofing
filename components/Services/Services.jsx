@@ -1,7 +1,14 @@
+"use client";
+
+import { useContext } from "react";
+import { ModalContext } from "@context/ModelContext";
+
 import ServiceCard from "./ServiceCard";
 import CTAButton from "@components/Shared/CTAButton";
 
 const Services = ({ services }) => {
+  const { openModal } = useContext(ModalContext);
+
   const serviceCards = services.map((service, index) => (
     <ServiceCard
       key={service.service}
@@ -23,7 +30,7 @@ const Services = ({ services }) => {
           <strong>FREE QUOTE</strong>
         </p>
 
-        <CTAButton>Contact Us</CTAButton>
+        <CTAButton handleClick={openModal}>Contact Us</CTAButton>
       </div>
     </section>
   );
