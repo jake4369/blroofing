@@ -12,7 +12,7 @@ const Services = ({ services }) => {
     />
   ));
   return (
-    <section className="service-section">
+    <section className="service-section" id="services">
       <h2>Our Services</h2>
 
       <section className="services__cards-container">{serviceCards}</section>

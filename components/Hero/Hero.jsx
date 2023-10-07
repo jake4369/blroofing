@@ -29,7 +29,7 @@ const Hero = () => {
   const activeSlide = slides[activeSlideIndex];
 
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="home">
       <div className="filter"></div>
 
       <div className="hero-section__text-carousel">

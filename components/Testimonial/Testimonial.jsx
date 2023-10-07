@@ -5,7 +5,7 @@ import { secondaryReviews } from "@constants";
 
 const Testimonial = () => {
   return (
-    <section className="testimonial-section">
+    <section className="testimonial-section" id="testimonials">
       <p>
         LB Roofing, a family-run business with over a decade of roofing and
         building expertise, is your go-to choice in the West Midlands for
