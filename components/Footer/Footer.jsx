@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <span className="footer__logo-text">
-        <span className="highlight__orange">LB</span> Roofing & Brickwork
+        <span className="highlight__orange">LB</span> Roofing
       </span>
 
       <p>
