@@ -34,10 +34,10 @@ const Nav = ({ animationClass, toggleMenu }) => {
           {links}
           <li onClick={toggleMenu}>
             <div className="nav__cta-btn-container">
+              <CTAButton>Contact Us</CTAButton>
               <p>
                 Get your <strong>FREE</strong> quote
               </p>
-              <CTAButton>Contact Us</CTAButton>
             </div>
           </li>
         </ul>

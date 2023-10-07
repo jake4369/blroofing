@@ -101,6 +101,6 @@ ul {
   margin-bottom: 2rem;
 }
 
-.nav__cta-btn-container p {
+.nav__cta-btn-container .cta-btn {
   margin-bottom: 1rem;
 }
