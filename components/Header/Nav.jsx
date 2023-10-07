@@ -1,50 +1,33 @@
-"use client";
-
 import Link from "next/link";
+import Image from "next/image";
 
-import CTAButton from "@components/Shared/CTAButton";
-
-import { FiX } from "react-icons/fi";
-
-const Nav = ({ animationClass, handleMenuBtnClick }) => {
+const Nav = ({ animationClass }) => {
   const sections = ["home", "about", "services", "testimonials"];
 
-  const mobileLinks = sections.map((section) => (
-    <li key={section} onClick={handleMenuBtnClick}>
+  const links = sections.map((section) => (
+    <li key={section}>
       <Link href={`#${section}`}>{section}</Link>
     </li>
   ));
 
-  const handleContactBtnClick = () => {
-    handleMenuBtnClick();
-    console.log("Contact us");
-  };
-
   return (
     <nav className={animationClass}>
-      <button className="menu-btn close-menu-btn" onClick={handleMenuBtnClick}>
-        <FiX className="menu-icon" />
-      </button>
+      {/* DESKTOP NAV */}
+      <ul className="desktop-nav"></ul>
 
-      <span className="mobile-menu__logo">
-        <span className="highlight__orange">LB</span> Roofing
-      </span>
-
-      <ul className="desktop-nav">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Our Services</li>
-        <li>Testimonials</li>
-        <li>Contact Us</li>
-      </ul>
-
+      {/* MOBILE NAV */}
       <div className="mobile-nav__container">
-        <ul className="mobile-nav">
-          {mobileLinks}
-          <li onClick={handleContactBtnClick}>
-            <CTAButton>Contact Us</CTAButton>
-          </li>
-        </ul>
+        <Image
+          src="/assets/services/house-icon.png"
+          alt=""
+          width={100}
+          height={100}
+        />
+        <span className="text-logo__mobile-nav">
+          <span className="highlight__orange">LB</span> Roofing
+        </span>
+
+        <ul className="mobile-nav">{links}</ul>
       </div>
     </nav>
   );
