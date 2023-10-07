@@ -13,9 +13,9 @@ const Services = ({ services }) => {
     <ServiceCard
       key={service.service}
       service={service.service}
-      img={service.img}
       text={service.text}
       isEven={index % 2 === 0}
+      index={index}
     />
   ));
   return (
