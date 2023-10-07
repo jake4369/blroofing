@@ -13,12 +13,13 @@ header {
   z-index: 1000;
 }
 
-.sticky-header {
-  position: sticky;
+header.sticky {
+  position: fixed;
   top: 0;
-  background-color: white; /* Adjust the background color as needed */
-  transition: top 1s ease-in-out; /* Add a smooth transition effect for the top property */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a shadow for the sticky effect */
+  background-color: #fff; /* You can customize the background color */
+  width: 100%;
+  animation: none; /* Remove animation for sticky header */
 }
 
 .logo-text {

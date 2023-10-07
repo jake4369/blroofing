@@ -7,31 +7,9 @@ import Nav from "./Nav";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Header = () => {
-  const [isSticky, setIsSticky] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [animationClass, setAnimationClass] = useState("");
-
-  useEffect(() => {
-    // Function to handle scroll event
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        // Change this value to the scroll position where you want the header to become sticky
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
-    };
-
-    // Add scroll event listener when the component mounts
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const headerClass = isSticky ? "sticky-header" : "";
+  const [isSticky, setIsSticky] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen((prevState) => !prevState);
@@ -51,15 +29,25 @@ const Header = () => {
       }
     };
 
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <header className={headerClass}>
+    <header className={isSticky ? "sticky" : ""}>
       <span className="logo-text">
         <span className="highlight__orange">LB</span> Roofing
       </span>
