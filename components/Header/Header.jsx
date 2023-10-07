@@ -14,7 +14,7 @@ const Header = () => {
   useEffect(() => {
     // Function to handle scroll event
     const handleScroll = () => {
-      if (window.scrollY > 600) {
+      if (window.scrollY > 0) {
         // Change this value to the scroll position where you want the header to become sticky
         setIsSticky(true);
       } else {
