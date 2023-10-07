@@ -74,10 +74,12 @@ nav ul {
   list-style-type: none;
 }
 
-.mobile-nav li {
+.mobile-nav li a {
+  color: #000;
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  text-transform: capitalize;
 }
 
 .mobile-nav li:last-of-type {
