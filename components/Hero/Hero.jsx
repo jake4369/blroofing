@@ -12,8 +12,8 @@ const Hero = () => {
 
   const slides = [
     "<span class='highlight__orange'>LB</span> Roofing <br /> <span class='highlight__orange hero__small'>West Midlands</span>",
-    "<span class='highlight__orange'>Expert <br /> Roofing Services</span> Near You",
-    "<span class='highlight__orange'>Trustworthy & Experienced</span> Roof Installers",
+    "<span class='highlight__orange'>Expert <br /> Roofing Services</span> <br /> Near You",
+    "<span class='highlight__orange'>Trustworthy & Experienced</span> <br /> Roof Installers",
     "<span class='highlight__orange'>Quality Roofing Solutions</span> <br /> For Your Home",
   ];
 
