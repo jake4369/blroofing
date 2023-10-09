@@ -53,7 +53,10 @@ const Testimonial = () => {
 
       <div className="testimonial-section__reviews">
         <span>Check out our reviews on </span>
-        <Link href="MyBuilder.com" target="_blank">
+        <Link
+          href="https://www.mybuilder.com/profile/view/billy_700"
+          target="_blank"
+        >
           MyBuilder.com
         </Link>
         <Reviews
