@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Modal from "@components/Modal/Modal";
 
 const About = () => {
   return (
@@ -23,6 +24,13 @@ const About = () => {
         satisfaction and word-of-mouth referrals. Count on us for premium
         materials and excellence in every project.
       </p>
+
+      <div className="about-section__contact">
+        <p className="modal-info">
+          For questions, quotes, or more information about our services
+        </p>
+        <p className="give-call">Give us a call today</p>
+      </div>
     </section>
   );
 };
