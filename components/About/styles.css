@@ -20,3 +20,17 @@
   font-weight: 700;
   margin-bottom: 2rem;
 }
+
+.about-section__contact {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .about-section {
+    width: 89.7135416667%;
+    max-width: 37.5rem;
+  }
+}
+
+@media (min-width: 90rem) {
+}

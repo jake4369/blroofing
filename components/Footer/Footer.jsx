@@ -11,23 +11,25 @@ const Footer = () => {
 
   return (
     <footer>
-      <span className="footer__logo-text">
-        <span className="highlight__orange">LB</span> Roofing
-      </span>
+      <div className="footer__text-content">
+        <span className="footer__logo-text">
+          <span className="highlight__orange">LB</span> Roofing
+        </span>
 
-      <p>
-        If you have any questions or require any further information on the
-        services we provide, please do not hestitate to contact us.
-      </p>
+        <p>
+          If you have any questions or require any further information on the
+          services we provide, please do not hestitate to contact us.
+        </p>
 
-      <p>
-        We will{" "}
-        <span className="highlight__orange">beat any written quote</span> you
-        recieve so get in touch for a <br />
-        <strong className="highlight__orange">FREE QUOTE</strong>.
-      </p>
+        <p>
+          We will{" "}
+          <span className="highlight__orange">beat any written quote</span> you
+          recieve so get in touch for a <br />
+          <strong className="highlight__orange">FREE QUOTE</strong>.
+        </p>
 
-      <CTAButton handleClick={openModal}>Contact Us</CTAButton>
+        <CTAButton handleClick={openModal}>Contact Us</CTAButton>
+      </div>
     </footer>
   );
 };

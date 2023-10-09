@@ -22,3 +22,10 @@
 .testimonial-section .cta-btn {
   margin-bottom: 4rem;
 }
+
+@media (min-width: 48rem) {
+  .testimonial-section {
+    width: 89.7135416667%;
+    max-width: 37.5rem;
+  }
+}

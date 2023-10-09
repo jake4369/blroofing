@@ -54,3 +54,10 @@
   padding: 0 6.4%;
   opacity: 0.6;
 }
+
+@media (min-width: 48rem) {
+  .services__cards-container {
+    max-width: 37.5rem;
+    margin: 0 auto 4rem auto;
+  }
+}

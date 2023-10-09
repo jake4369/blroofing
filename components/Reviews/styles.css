@@ -56,3 +56,12 @@
   font-weight: 700;
   color: #5c8edc;
 }
+
+@media (min-width: 48rem) {
+  .review-card,
+  .reviews__primary,
+  .reviews__secondary {
+    width: 89.7135416667%;
+    max-width: 31.25rem;
+  }
+}
