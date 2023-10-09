@@ -25,9 +25,9 @@ const Home = () => {
         reviewData={primaryReviews}
         timer={2500}
       />
-      <ImageDivider img="/assets/misc/roofer.png" />
+      <ImageDivider dividerClassname="img-divider__primary" />
       <Services services={services} />
-      <ImageDivider img="/assets/misc/guttering.png" />
+      <ImageDivider dividerClassname="img-divider_secondary" />
       <Testimonial />
       {modalOpen && <Modal />}
     </main>

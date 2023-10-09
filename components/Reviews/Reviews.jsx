@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 
+import Image from "next/image";
 import Link from "next/link";
 
 import { FaStar } from "react-icons/fa";
@@ -24,6 +25,14 @@ const Reviews = ({ reviewClassname, reviewData, timer }) => {
 
   return (
     <div className={`review-card ${reviewClassname}`}>
+      <Image
+        src="/assets/misc/mybuilder.png"
+        alt=""
+        width={100}
+        height={100}
+        className="mybuilder__logo"
+      />
+
       <div className="review-section__stars-container">
         <FaStar />
         <FaStar />
@@ -31,14 +40,6 @@ const Reviews = ({ reviewClassname, reviewData, timer }) => {
         <FaStar />
         <FaStar />
       </div>
-
-      <Link
-        href="https://www.mybuilder.com/profile/view/billy_700/feedback"
-        target="_blank"
-        className="review-section__link"
-      >
-        MyBuilder.com
-      </Link>
 
       <p className={`${reviewClassname}__text`}>
         {slides[activeSlideIndex].text}

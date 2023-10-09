@@ -22,7 +22,17 @@ const Services = ({ services }) => {
     <section className="service-section" id="services">
       <h2>Our Services</h2>
 
-      <section className="services__cards-container">{serviceCards}</section>
+      <p className="service-section__intro">
+        Elevate your home's beauty, functionality, and longevity with our
+        comprehensive range of expert roofing and exterior services. From
+        enhancing aesthetics to safeguarding against damage, we've got you
+        covered. Discover how we can transform your property today.
+      </p>
+
+      <section className="services__cards-container">
+        <div className="services__filter"></div>
+        {serviceCards}
+      </section>
 
       <div className="service__contact-section">
         <p>

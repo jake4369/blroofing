@@ -61,6 +61,8 @@ const Modal = () => {
         <CTAButton handleClick={handleCallButtonClick}>
           <FiPhone className="phone-icon" /> 07352 364373
         </CTAButton>
+
+        <span className="contact-number">07946 509599</span>
       </div>
     </div>
   );

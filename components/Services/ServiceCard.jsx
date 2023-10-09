@@ -18,7 +18,9 @@ const ServiceCard = ({ service, text, isEven, index }) => {
       if (card) {
         const rect = card.getBoundingClientRect();
         const isCardInViewWithOffset =
-          rect.top + 130 < window.innerHeight && rect.bottom >= 0;
+          window.innerWidth < 1000
+            ? rect.top + 130 < window.innerHeight && rect.bottom >= 0
+            : rect.top + 50 < window.innerHeight && rect.bottom >= 0;
 
         if (isCardInViewWithOffset && !hasAnimated) {
           setAnimate(true);

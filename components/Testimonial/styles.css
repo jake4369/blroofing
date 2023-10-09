@@ -23,9 +23,88 @@
   margin-bottom: 4rem;
 }
 
+.mybuilder__logo {
+  border-radius: 0.5rem;
+  margin: 0 auto 2rem;
+}
+
+.testimonial-section__reviews span {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.testimonial-section__reviews a {
+  font-size: 1.25rem;
+  color: #5c8edc;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.testimonial-section__desktop-text {
+  display: none;
+}
+
 @media (min-width: 48rem) {
   .testimonial-section {
     width: 89.7135416667%;
     max-width: 37.5rem;
+  }
+
+  .testimonial-section p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 68.75rem) {
+  .testimonial-section {
+    width: 100%;
+    max-width: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 6rem 11.4583333333%;
+  }
+
+  .testimonial-section__text-content {
+    width: 40%;
+  }
+
+  .testimonial-section h3 {
+    font-size: 3.5rem;
+  }
+
+  .testimonial-section p {
+    margin-bottom: 2rem;
+  }
+
+  .testimonial-section__desktop-text {
+    display: block;
+  }
+
+  .testimonial-section__reviews {
+    width: 50%;
+    text-align: center;
+  }
+
+  .testimonial-section__reviews span {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 0rem;
+    font-weight: 700;
+  }
+
+  .testimonial-section__reviews a {
+    font-size: 2rem;
+    color: #5c8edc;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  .testimonial-section__reviews a:hover {
+    text-decoration: underline;
   }
 }
