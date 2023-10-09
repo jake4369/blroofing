@@ -14,8 +14,14 @@ const Nav = ({ animationClass, toggleMenu }) => {
 
   const sections = ["home", "about", "services", "testimonials"];
 
-  const links = sections.map((section) => (
+  const mobileLinks = sections.map((section) => (
     <li key={section} onClick={toggleMenu}>
+      <Link href={`#${section}`}>{section}</Link>
+    </li>
+  ));
+
+  const desktopLinks = sections.map((section) => (
+    <li key={section}>
       <Link href={`#${section}`}>{section}</Link>
     </li>
   ));
@@ -23,7 +29,7 @@ const Nav = ({ animationClass, toggleMenu }) => {
   return (
     <nav className={animationClass}>
       {/* DESKTOP NAV */}
-      <ul className="desktop-nav"></ul>
+      <ul className="desktop-nav">{desktopLinks}</ul>
 
       {/* MOBILE NAV */}
       <div className="mobile-nav__container">
@@ -39,7 +45,7 @@ const Nav = ({ animationClass, toggleMenu }) => {
         </span>
 
         <ul className="mobile-nav">
-          {links}
+          {mobileLinks}
           <li onClick={toggleMenu}>
             <div className="nav__cta-btn-container">
               <CTAButton handleClick={openModal}>Contact Us</CTAButton>

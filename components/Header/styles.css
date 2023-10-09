@@ -35,8 +35,21 @@ header.sticky + .header-placeholder {
 }
 
 .logo-text {
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.logo-text img {
+  width: 3.125rem;
+  height: auto;
+  margin-right: 0.5rem;
+}
+
+header span.highlight__orange {
+  display: inline-block;
+  margin-right: 0.25rem;
 }
 
 .menu-btn {
@@ -103,4 +116,90 @@ ul {
 
 .nav__cta-btn-container .cta-btn {
   margin-bottom: 1rem;
+}
+
+@media (min-width: 62.5rem) {
+  header {
+    padding: 0 4%;
+  }
+
+  header,
+  .header-placeholder {
+    height: 6.25rem;
+  }
+
+  .logo-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .logo-text img {
+    width: 4.375rem;
+    height: auto;
+    margin-right: 0.5rem;
+  }
+
+  header span.highlight__orange {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+
+  nav {
+    top: 50%;
+    left: unset;
+    right: 4%;
+    height: auto;
+    min-height: unset;
+    transform: translate(0, -50%);
+    opacity: 1;
+    width: 50%;
+  }
+
+  .mobile-nav__container,
+  .mobile-nav,
+  .menu-btn {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop-nav li a {
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    color: #000;
+  }
+}
+
+@media (min-width: 90rem) {
+  nav {
+    width: 40%;
+  }
+
+  .desktop-nav li a {
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+  }
+
+  .desktop-nav li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .desktop-nav li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }

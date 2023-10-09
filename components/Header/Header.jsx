@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 
+import Image from "next/image";
+
 import Nav from "./Nav";
 
 import { FiMenu, FiX } from "react-icons/fi";
@@ -73,6 +75,12 @@ const Header = () => {
     <div className="header-container">
       <header className={isSticky ? "sticky" : ""}>
         <span className="logo-text">
+          <Image
+            src="/assets/services/house-icon.png"
+            alt=""
+            width={50}
+            height={50}
+          />
           <span className="highlight__orange">LB</span> Roofing
         </span>
 
