@@ -9,6 +9,7 @@ export const metadata = {
   title: "LB Roofing",
   description:
     "Trust LB Roofing: Expert West Midlands roofing repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices.",
+  canonicalUrl: "https://lb-roofing.vercel.app/",
 };
 
 export default function RootLayout({ children }) {
