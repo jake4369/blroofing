@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
           href="https://lb-roofing.vercel.app/"
           key="canonical"
         />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta property="og:title" content="LB Roofing - West Midlands" />
         <meta
           property="og:description"
