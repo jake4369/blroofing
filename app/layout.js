@@ -18,11 +18,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <title>LB Roofing</title>
+        <title>LB Roofing - West Midlands</title>
         <link
           rel="canonical"
           href="https://lb-roofing.vercel.app/"
           key="canonical"
+        />
+        <meta property="og:title" content="LB Roofing - West Midlands" />
+        <meta
+          property="og:description"
+          content="Trust LB Roofing: Expert West Midlands roofing repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices."
         />
       </Head>
       <body>
