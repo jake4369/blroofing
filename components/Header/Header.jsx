@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import Nav from "./Nav";
 
@@ -75,12 +76,14 @@ const Header = () => {
     <div className="header-container">
       <header className={isSticky ? "sticky" : ""}>
         <span className="logo-text">
-          <Image
-            src="/assets/services/house-icon.png"
-            alt="Miscellaneous roof icon"
-            width={50}
-            height={50}
-          />
+          <Link href="https://lb-roofing.vercel.app/">
+            <Image
+              src="/assets/services/house-icon.png"
+              alt="Miscellaneous roof icon"
+              width={50}
+              height={50}
+            />
+          </Link>
           <span className="highlight__orange">LB</span> Roofing
         </span>
 
