@@ -5,3 +5,4 @@ Disallow: /temp/
 Disallow: /cgi-bin/
 Disallow: /wp-admin/
 Disallow: /wp-includes/
+Sitemap: https://lb-roofing.vercel.app/sitemap.xml
