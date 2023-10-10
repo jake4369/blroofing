@@ -30,13 +30,20 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Trust LB Roofing: Expert West Midlands roofing repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices."
         />
-        <meta property="og:image" content="/assets/hero/hero-img-tablet.png" />
+        <meta property="og:image" content="/hero.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://lb-roofing.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="LB Roofing" />
         <meta property="og:locale" content="en_GB" />
+        <meta property="twitter:image" content="/hero.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content="LB Roofing - West Midlands" />
+        <meta
+          property="twitter:description"
+          content="Trust LB Roofing: Expert West Midlands roofing repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices."
+        ></meta>
         <meta
           property="og:article:author"
           content="https://lb-roofing.vercel.app/"
