@@ -35,7 +35,7 @@ const Nav = ({ animationClass, toggleMenu }) => {
       <div className="mobile-nav__container">
         <Image
           src="/assets/services/house-icon.png"
-          alt=""
+          alt="Miscellaneous roof icon"
           width={100}
           height={100}
           priority
@@ -48,7 +48,12 @@ const Nav = ({ animationClass, toggleMenu }) => {
           {mobileLinks}
           <li onClick={toggleMenu}>
             <div className="nav__cta-btn-container">
-              <CTAButton handleClick={openModal}>Contact Us</CTAButton>
+              <CTAButton
+                handleClick={openModal}
+                ariaLabel="Click here to find our contact information"
+              >
+                Contact Us
+              </CTAButton>
               <p>
                 Get your <strong>FREE</strong> quote
               </p>

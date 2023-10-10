@@ -52,7 +52,7 @@ const ServiceCard = ({ service, text, isEven, index }) => {
     >
       <Image
         src="/assets/services/house-icon.png"
-        alt=""
+        alt="Miscellaneous roof icon"
         width={100}
         height={100}
         className="service-card__icon"

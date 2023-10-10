@@ -45,7 +45,7 @@ const Modal = () => {
         </button>
         <Image
           src="/assets/services/house-icon.png"
-          alt=""
+          alt="Miscellaneous roof icon"
           width={100}
           height={100}
           priority
@@ -58,8 +58,11 @@ const Modal = () => {
         </p>
         <p className="give-call">Give us a call today</p>
 
-        <CTAButton handleClick={handleCallButtonClick}>
-          <FiPhone className="phone-icon" /> 07352 364373
+        <CTAButton
+          handleClick={handleCallButtonClick}
+          ariaLabel="Click here to open dialler with LB Roofing contact number"
+        >
+          <FiPhone className="phone-icon" /> 07946 509599
         </CTAButton>
 
         <span className="contact-number">07946 509599</span>

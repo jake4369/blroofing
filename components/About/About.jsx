@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-section__text-content">
         <Image
           src="/assets/services/house-icon.png"
-          alt=""
+          alt="Miscellaneous roof icon"
           width={150}
           height={150}
         />

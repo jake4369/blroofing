@@ -1,6 +1,6 @@
-const CTAButton = ({ children, handleClick }) => {
+const CTAButton = ({ children, handleClick, ariaLabel }) => {
   return (
-    <button className="cta-btn" onClick={handleClick}>
+    <button className="cta-btn" onClick={handleClick} aria-label={ariaLabel}>
       {children}
     </button>
   );

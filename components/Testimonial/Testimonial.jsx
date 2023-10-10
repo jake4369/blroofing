@@ -48,7 +48,12 @@ const Testimonial = () => {
           <strong>Trust us to beat any written quote you receive.</strong>
         </p>
 
-        <CTAButton handleClick={openModal}>Get a Quote</CTAButton>
+        <CTAButton
+          handleClick={openModal}
+          ariaLabel="Click here to find our contact information and get your free quote"
+        >
+          Get a Quote
+        </CTAButton>
       </div>
 
       <div className="testimonial-section__reviews">

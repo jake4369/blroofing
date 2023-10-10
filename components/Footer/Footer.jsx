@@ -28,7 +28,12 @@ const Footer = () => {
           <strong className="highlight__orange">FREE QUOTE</strong>.
         </p>
 
-        <CTAButton handleClick={openModal}>Contact Us</CTAButton>
+        <CTAButton
+          handleClick={openModal}
+          ariaLabel="Click here to find our contact information"
+        >
+          Contact Us
+        </CTAButton>
       </div>
     </footer>
   );

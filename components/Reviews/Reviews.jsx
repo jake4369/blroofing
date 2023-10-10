@@ -27,7 +27,7 @@ const Reviews = ({ reviewClassname, reviewData, timer }) => {
     <div className={`review-card ${reviewClassname}`}>
       <Image
         src="/assets/misc/mybuilder.png"
-        alt=""
+        alt="MyBuilder logo"
         width={100}
         height={100}
         className="mybuilder__logo"

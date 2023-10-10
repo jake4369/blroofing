@@ -77,7 +77,7 @@ const Header = () => {
         <span className="logo-text">
           <Image
             src="/assets/services/house-icon.png"
-            alt=""
+            alt="Miscellaneous roof icon"
             width={50}
             height={50}
           />

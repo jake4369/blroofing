@@ -42,7 +42,12 @@ const Hero = () => {
         />
       </div>
 
-      <CTAButton handleClick={openModal}>Get a Quote</CTAButton>
+      <CTAButton
+        handleClick={openModal}
+        ariaLabel="Click here to find our contact information and get your free quote"
+      >
+        Get a Quote
+      </CTAButton>
     </section>
   );
 };
