@@ -31,10 +31,16 @@ export default function RootLayout({ children }) {
           content="Trust LB Roofing: Expert West Midlands roofing repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices."
         />
         <meta property="og:image" content="/assets/hero/hero-img-tablet.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://lb-roofing.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="LB Roofing"></meta>
-        <meta property="og:locale" content="en_US"></meta>
+        <meta property="og:site_name" content="LB Roofing" />
+        <meta property="og:locale" content="en_GB" />
+        <meta
+          property="og:article:author"
+          content="https://lb-roofing.vercel.app/"
+        />
       </Head>
       <body>
         <ModalProvider>
