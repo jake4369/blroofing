@@ -75,17 +75,17 @@ const Header = () => {
   return (
     <div className="header-container">
       <header className={isSticky ? "sticky" : ""}>
-        <span className="logo-text">
-          <Link href="https://lb-roofing.vercel.app/">
+        <Link href="/">
+          <span className="logo-text">
             <Image
               src="/assets/services/house-icon.png"
               alt="Miscellaneous roof icon"
               width={50}
               height={50}
             />
-          </Link>
-          <span className="highlight__orange">LB</span> Roofing
-        </span>
+            <span className="highlight__orange">LB</span> Roofing
+          </span>
+        </Link>
 
         <button className="menu-btn">
           {menuOpen ? (

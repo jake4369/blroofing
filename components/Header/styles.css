@@ -34,6 +34,10 @@ header.sticky + .header-placeholder {
   display: block;
 }
 
+a {
+  color: #000;
+}
+
 .logo-text {
   display: flex;
   align-items: center;
