@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Trust LB Roofing: Expert West Midlands roofing repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices."
         />
+        <meta property="og:image" content="/assets/hero/hero-img-tablet.png" />
       </Head>
       <body>
         <ModalProvider>
