@@ -24,7 +24,7 @@ const Reviews = ({ reviewClassname, reviewData, timer }) => {
   }, [slides]);
 
   return (
-    <div className={`review-card ${reviewClassname}`}>
+    <section className={`review-card ${reviewClassname}`}>
       <Image
         src="/assets/misc/mybuilder.png"
         alt="MyBuilder logo"
@@ -46,7 +46,7 @@ const Reviews = ({ reviewClassname, reviewData, timer }) => {
       </p>
 
       <span className="review__author">{slides[activeSlideIndex].author}</span>
-    </div>
+    </section>
   );
 };
 

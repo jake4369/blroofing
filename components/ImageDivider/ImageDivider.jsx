@@ -1,5 +1,5 @@
 const ImageDivider = ({ dividerClassname }) => {
-  return <div className={`img-divider ${dividerClassname}`}></div>;
+  return <section className={`img-divider ${dividerClassname}`}></section>;
 };
 
 export default ImageDivider;

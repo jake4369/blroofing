@@ -38,7 +38,7 @@ const Modal = () => {
   }, []);
 
   return (
-    <div className="modal-container">
+    <section className="modal-container">
       <div className="modal">
         <button className="close-modal-btn" onClick={closeModal}>
           <FiX className="close-modal-icon" />
@@ -67,7 +67,7 @@ const Modal = () => {
 
         <span className="contact-number">07946 509599</span>
       </div>
-    </div>
+    </section>
   );
 };
 
