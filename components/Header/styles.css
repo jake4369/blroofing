@@ -174,7 +174,12 @@ ul {
   .desktop-nav li a {
     text-transform: uppercase;
     font-size: 1.125rem;
+    font-weight: 700;
     color: #000;
+  }
+
+  .desktop-nav .cta-btn {
+    display: none;
   }
 }
 
@@ -186,7 +191,6 @@ ul {
   .desktop-nav li a {
     display: inline-block;
     position: relative;
-    font-weight: 700;
   }
 
   .desktop-nav li a::after {
@@ -205,6 +209,10 @@ ul {
   .desktop-nav li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  .desktop-nav .cta-btn {
+    display: block;
   }
 
   .desktop-nav .cta-btn:hover {
