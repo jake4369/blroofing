@@ -98,34 +98,6 @@ const Header = () => {
         <Nav toggleMenu={toggleMenu} animationClass={animationClass} />
       </header>
       {isSticky && <div className="header-placeholder" />}
-
-      {/* Schema.org LocalBusiness Markup */}
-      <script type="application/ld+json">
-        {`
-          {
-            "@context": "http://schema.org",
-            "@type": "LocalBusiness",
-            "name": "LB Roofing",
-            "description": "Expert roofing repairs, maintenance, and replacements in the West Midlands.",
-            "url": "https://lb-roofing.vercel.app/",
-            "logo": "https://lb-roofing.vercel.app/assets/services/house-icon.png",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "123 Main Street",
-              "addressLocality": "West Midlands",
-              "postalCode": "12345",
-              "addressCountry": "UK"
-            },
-            "telephone": "+123456789",
-            "openingHours": "Mo-Fr 08:00-17:00",
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": "51.12345",
-              "longitude": "-0.12345"
-            }
-          }
-        `}
-      </script>
     </div>
   );
 };
