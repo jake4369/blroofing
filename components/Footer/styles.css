@@ -20,8 +20,23 @@ footer p {
   margin-bottom: 2rem;
 }
 
-footer p:last-of-type {
+/* footer p:last-of-type {
   margin-bottom: 4rem;
+} */
+
+footer .cta-btn {
+  margin-bottom: 2rem;
+}
+
+.business-profile-links p {
+  margin-bottom: 1rem;
+}
+
+.business-profile-links .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 @media (min-width: 48rem) {

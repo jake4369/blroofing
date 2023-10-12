@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { ModalContext } from "@context/ModelContext";
 
 import CTAButton from "@components/Shared/CTAButton";
+import BusinessProfiles from "@components/BusinessProfiles/BusinessProfiles";
 
 const Footer = () => {
   const { openModal } = useContext(ModalContext);
@@ -35,6 +36,8 @@ const Footer = () => {
           Contact Us
         </CTAButton>
       </div>
+
+      <BusinessProfiles />
     </footer>
   );
 };
