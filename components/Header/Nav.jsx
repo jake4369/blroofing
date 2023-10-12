@@ -29,7 +29,17 @@ const Nav = ({ animationClass, toggleMenu }) => {
   return (
     <nav className={animationClass}>
       {/* DESKTOP NAV */}
-      <ul className="desktop-nav">{desktopLinks}</ul>
+      <ul className="desktop-nav">
+        {desktopLinks}
+        <li>
+          <CTAButton
+            handleClick={openModal}
+            ariaLabel="Click here to find our contact information and get your free quote"
+          >
+            Get A Quote
+          </CTAButton>
+        </li>
+      </ul>
 
       {/* MOBILE NAV */}
       <div className="mobile-nav__container">
