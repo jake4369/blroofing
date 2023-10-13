@@ -126,4 +126,8 @@
   .service-card p {
     text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
   }
+
+  .slideshow {
+    display: none;
+  }
 }
