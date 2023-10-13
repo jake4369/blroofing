@@ -7,6 +7,30 @@ import Footer from "@components/Footer/Footer";
 
 import { ModalProvider } from "@context/ModelContext";
 
+const schema = {
+  "@context": "http://schema.org",
+  "@type": "LocalBusiness",
+  name: "LB Roofing",
+  description:
+    "Expert roofing and guttering repairs, maintenance, and replacements in the West Midlands.",
+  url: "http://www.lbroofer.co.uk/",
+  logo: "http://www.lbroofer.co.uk/assets/services/house-icon.png",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Old Fallings Lane",
+    addressLocality: "West Midlands",
+    postalCode: "WV108BN",
+    addressCountry: "UK",
+  },
+  telephone: "+447946509599",
+  openingHours: "Mo-Fr 08:00-17:00",
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "52.4751",
+    longitude: "1.8298",
+  },
+};
+
 export const metadata = {
   title: "LB Roofing",
   description:
@@ -50,6 +74,7 @@ export default function RootLayout({ children }) {
           content="http://www.lbroofer.co.uk/"
         />
       </Head>
+
       <body>
         <ModalProvider>
           <Header />
@@ -57,32 +82,10 @@ export default function RootLayout({ children }) {
           <Footer />
         </ModalProvider>
 
-        <script type="application/ld+json">
-          {`
-          {
-            "@context": "http://schema.org",
-            "@type": "LocalBusiness",
-            "name": "LB Roofing",
-            "description": "Expert roofing and guttering repairs, maintenance, and replacements in the West Midlands.",
-            "url": "http://www.lbroofer.co.uk/",
-            "logo": "http://www.lbroofer.co.uk/assets/services/house-icon.png",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "Old Fallings Lane",
-              "addressLocality": "West Midlands",
-              "postalCode": "WV108BN",
-              "addressCountry": "UK"
-            },
-            "telephone": "+447946509599",
-            "openingHours": "Mo-Fr 08:00-17:00",
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": "52.4751",
-              "longitude": "1.8298"
-            }
-          }
-        `}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       </body>
     </html>
   );
