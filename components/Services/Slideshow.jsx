@@ -11,7 +11,7 @@ const ImageSlideshow = () => {
     "/assets/slideshow/guttering.png",
     "/assets/slideshow/chimney.png",
   ];
-  const interval = 2000;
+  const interval = 3000;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
