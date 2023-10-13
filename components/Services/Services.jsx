@@ -4,6 +4,7 @@ import { useContext } from "react";
 import { ModalContext } from "@context/ModelContext";
 
 import ServiceCard from "./ServiceCard";
+import Slideshow from "./Slideshow";
 import CTAButton from "@components/Shared/CTAButton";
 
 const Services = ({ services }) => {
@@ -33,6 +34,8 @@ const Services = ({ services }) => {
         <div className="services__filter"></div>
         {serviceCards}
       </section>
+
+      <Slideshow />
 
       <div className="service__contact-section">
         <p>
