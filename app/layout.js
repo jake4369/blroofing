@@ -34,7 +34,7 @@ const schema = {
 export const metadata = {
   title: "LB Roofing",
   description:
-    "Trust LB Roofing: Expert West Midlands roofing and guttering repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices.",
+    "Trust LB Roofing: Expert West Midlands roofing and guttering repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices. Proudly serving Wolverhampton, Birmingham and all surrounding areas.",
   canonicalUrl: "http://www.lbroofer.co.uk/",
 };
 
@@ -53,7 +53,7 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="LB Roofing" />
         <meta
           property="og:description"
-          content="Trust LB Roofing: Expert West Midlands roofing and guttering repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices."
+          content="Trust LB Roofing: Expert West Midlands roofing and guttering repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices. Proudly serving Wolverhampton, Birmingham and all surrounding areas."
         />
         <meta property="og:image" content="/hero.png" />
         <meta property="og:image:width" content="1200" />
@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
         <meta property="twitter:title" content="LB Roofing" />
         <meta
           property="twitter:description"
-          content="Trust LB Roofing: Expert West Midlands roofing and guttering repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices."
+          content="Trust LB Roofing: Expert West Midlands roofing and guttering repairs, maintenance, replacements. Quality materials, unbeatable service, competitive prices. Proudly serving Wolverhampton, Birmingham and all surrounding areas. Proudly serving Wolverhampton, Birmingham and all surrounding areas."
         ></meta>
         <meta
           property="og:article:author"
