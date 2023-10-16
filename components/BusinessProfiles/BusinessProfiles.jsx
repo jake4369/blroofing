@@ -8,7 +8,7 @@ const BusinessProfiles = () => {
         Click the links below to see more reviews from our satisfied customers
       </p>
       <div className="flex-container">
-        <Link href="https://g.page/r/CQFF86MrnrFmEAI/review" target="_blank">
+        <Link href="https://g.co/kgs/QADZUz" target="_blank">
           <Image
             src="/assets/misc/google-business.png"
             alt="Google Business logo"
