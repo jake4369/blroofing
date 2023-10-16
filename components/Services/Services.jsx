@@ -37,6 +37,32 @@ const Services = ({ services }) => {
 
       <Slideshow />
 
+      {/*      <p className="service-section__outro-paragraph">
+        At LB Roofing, we've got you covered from A to Z when it comes to your
+        roofing needs. Whether it's <strong>general roof repairs</strong>,
+        <strong> installing a brand-new roof</strong>,{" "}
+        <strong>handling emergency situations</strong>, or expertly crafting
+        <strong>lead work</strong> and <strong>flashing</strong>, we've got it
+        all checked off. We also take care of <strong>cladding</strong>,{" "}
+        <strong>fascias</strong>, <strong>soffits</strong>,
+        <strong>guttering systems</strong>, and provide top-notch{" "}
+        <strong>flat</strong>, <strong>pitched</strong>, and{" "}
+        <strong>felt roofing solutions</strong>. Our skilled team specializes in
+        <strong>chimney work</strong>, <strong>asbestos removal</strong>, and{" "}
+        <strong>roof cleaning</strong> to ensure the longevity and beauty of
+        your home. Your roof's well-being is our priority, and we're here to
+        deliver excellence in every aspect of roofing.
+  </p>*/}
+
+      <p className="service-section__outro-paragraph">
+        Explore a complete roofing solution, including general repairs,{" "}
+        <strong>new roofs</strong>, <strong>emergency services</strong>,{" "}
+        <strong>lead work</strong>, cladding, guttering,{" "}
+        <strong>flat and pitched roofing</strong>, <strong>chimney care</strong>
+        , <strong>asbestos removal</strong>, and <strong>roof cleaning</strong>.
+        We've got your roof covered!
+      </p>
+
       <div className="service__contact-section">
         <p>
           Contact us for more information about our services and for your <br />
