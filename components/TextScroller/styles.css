@@ -1,0 +1,41 @@
+.scroller {
+  max-width: 37.5rem;
+  margin: 0 auto;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller__inner li {
+  white-space: nowrap;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 120s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(-50%, -0.5rem);
+  }
+}
