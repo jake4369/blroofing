@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Modal from "@components/Modal/Modal";
 
 const About = () => {
   return (
