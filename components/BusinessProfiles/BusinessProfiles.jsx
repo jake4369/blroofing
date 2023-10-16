@@ -8,6 +8,16 @@ const BusinessProfiles = () => {
         Click the links below to see more reviews from our satisfied customers
       </p>
       <div className="flex-container">
+        <Link href="https://g.page/r/CQFF86MrnrFmEAI/review" target="_blank">
+          <Image
+            src="/assets/misc/google-business.png"
+            alt="Google Business logo"
+            width={50}
+            height={50}
+            aria-label="Click this link to visit my Google Business profile page"
+          />
+        </Link>
+
         <Link
           href="https://www.mybuilder.com/profile/view/billy_700"
           target="_blank"
@@ -17,6 +27,7 @@ const BusinessProfiles = () => {
             alt="MyBuilder logo"
             width={50}
             height={50}
+            aria-label="Click this link to visit my MyBuilder profile page"
           />
         </Link>
 
@@ -29,6 +40,7 @@ const BusinessProfiles = () => {
             alt="Yell logo"
             width={50}
             height={50}
+            aria-label="Click this link to visit my Yell profile page"
           />
         </Link>
       </div>
