@@ -6,6 +6,7 @@
 .scroller__inner {
   padding-block: 1rem;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -37,5 +38,21 @@
 @keyframes scroll {
   to {
     transform: translate(-50%, -0.5rem);
+  }
+}
+
+@media (min-width: 90rem) {
+  .scroller {
+    max-width: 69.375rem;
+    margin: 0 auto;
+  }
+
+  .scroller__inner {
+    padding-block: 2rem;
+    gap: 4rem;
+  }
+
+  .scroller__inner li {
+    font-size: 2rem;
   }
 }
