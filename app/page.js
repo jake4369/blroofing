@@ -9,6 +9,7 @@ import ImageDivider from "@components/ImageDivider/ImageDivider";
 import Services from "@components/Services/Services";
 import Testimonial from "@components/Testimonial/Testimonial";
 import Modal from "@components/Modal/Modal";
+import TextScroller from "@components/TextScroller/TextScroller";
 
 import { ModalContext } from "@context/ModelContext";
 
@@ -29,6 +30,7 @@ const Home = () => {
       <Services services={services} />
       <ImageDivider dividerClassname="img-divider_secondary" />
       <Testimonial />
+      <TextScroller />
       {modalOpen && <Modal />}
     </main>
   );
