@@ -9,6 +9,7 @@
 @import "./../components/Testimonial/styles.css";
 @import "./../components/Footer/styles.css";
 @import "./../components/Modal/styles.css";
+@import "./../components/TextScroller/styles.css";
 
 * {
   margin: 0;
