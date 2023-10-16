@@ -55,9 +55,10 @@ const Services = ({ services }) => {
   </p>*/}
 
       <p className="service-section__outro-paragraph">
-        Explore a complete roofing solution, including general repairs,{" "}
-        <strong>new roofs</strong>, <strong>emergency services</strong>,{" "}
-        <strong>lead work</strong>, cladding, guttering,{" "}
+        Explore a complete roofing solution, including{" "}
+        <strong>general repairs</strong>, <strong>new roofs</strong>,{" "}
+        <strong>emergency services</strong>, <strong>lead work</strong>,{" "}
+        <strong>cladding</strong>, <strong>guttering</strong>,{" "}
         <strong>flat and pitched roofing</strong>, <strong>chimney care</strong>
         , <strong>asbestos removal</strong>, and <strong>roof cleaning</strong>.
         We've got your roof covered!
