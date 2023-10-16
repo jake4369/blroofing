@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: flex-start;
   padding: 2rem 1rem 0;
+  margin-bottom: 0;
 }
 
 .reviews__primary__text {
